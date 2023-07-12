@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS lesson_2;
+CREATE DATABASE seminar2;
+USE lesson_2;
+
+DROP TABLE IF EXISTS sales;
+CREATE TABLE sales (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE PRIMARY KEY,
+	order_date DATE,
+	count_product INT DEFAULT '0'
+);
+
+INSERT INTO `sales` (order_date, count_product)
+VALUES 
+('2023-07-01', 156),
+('2023-07-02', 180),
+('2023-07-03', 21),
+('2023-07-04', 124),
+('2023-07-05', 341);
