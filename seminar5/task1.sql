@@ -1,0 +1,5 @@
+CREATE VIEW cars1 AS 
+SELECT * FROM Cars
+WHERE cost < 25000;
+
+SELECT * FROM cars1;
